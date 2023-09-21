@@ -1,0 +1,15 @@
+{
+  "name": "upload-to-s3-api-gateway",
+  "version": "1.0.0",
+  "description": "uploding to s3 bucket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sagar.yelgond@hyniva.com",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1462.0",
+    "parse-multipart-data": "^1.5.0"
+  }
+}
