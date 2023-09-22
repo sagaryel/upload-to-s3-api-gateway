@@ -1,4 +1,4 @@
-service: file-upload-download-api
+service: s3practice
 provider:
   name: aws
   runtime: nodejs18.x
@@ -10,7 +10,7 @@ provider:
 functions:
   # sync upload
   uploadFile:
-    handler: app.uploadFile
+    handler: api.handle
     events:
       - http:
           method: post
@@ -21,7 +21,7 @@ resources:
     MyServerlessExampleBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: fileupload-example-bucket
+        BucketName: serverless-s4-bucket
     # define a policy for an existing role
     UploadFilePolicy:
       Type: AWS::IAM::Policy
