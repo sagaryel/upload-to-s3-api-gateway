@@ -1,4 +1,4 @@
-service: s3practice
+service: s3 bucket creation
 provider:
   name: aws
   runtime: nodejs18.x
@@ -21,7 +21,7 @@ resources:
     MyServerlessExampleBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: serverless-s4-bucket
+        BucketName: s3-bucket
     # define a policy for an existing role
     UploadFilePolicy:
       Type: AWS::IAM::Policy
