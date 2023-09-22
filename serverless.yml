@@ -20,7 +20,7 @@ functions:
     handler: app.hello
     events:
       - http:
-          method: GET
+          method: post
           path: /
           cors: true
 resources:
