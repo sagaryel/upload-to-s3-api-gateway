@@ -68,3 +68,13 @@ module.exports.handle = async (event) => {
     };
   }
 };		  
+
+exports.hello = async (event, context) => {
+  console.log(`Hi from Node.js ${process.version} on Lambda!`)
+  S3.getObject({Bucket: BUCKET, Key: 'pic1 - Copy (1).pdf'}).promise().then( data =>{
+    return {
+      statusCode: 200,
+      body: data
+  }})
+}
+

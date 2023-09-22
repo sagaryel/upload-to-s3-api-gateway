@@ -16,6 +16,13 @@ functions:
           method: post
           path: upload
           cors: true
+  downloadFile:
+    handler: app.handle
+    events:
+      - http:
+          method: GET
+          path: /
+          cors: true
 resources:
   Resources:
     MyServerlessExampleBucket:
