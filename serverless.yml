@@ -21,7 +21,7 @@ resources:
     MyServerlessExampleBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: s3-bucket
+        BucketName: serverless-bucket
     # define a policy for an existing role
     UploadFilePolicy:
       Type: AWS::IAM::Policy
