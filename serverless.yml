@@ -17,7 +17,7 @@ functions:
           path: upload
           cors: true
   downloadFile:
-    handler: app.handle
+    handler: app.hello
     events:
       - http:
           method: GET
