@@ -1,4 +1,4 @@
-service: s3 bucket creation
+service: serverless-bucket-creation
 provider:
   name: aws
   runtime: nodejs18.x
